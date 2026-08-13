@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Download, Share2, Sparkles, Plane, Code2, ShieldAlert, Heart, Compass } from 'lucide-react';
 import heic2any from 'heic2any';
 
-type ThemeType = 'vscode' | 'boarding_pass' | 'bikini_bottom' | 'barbie_land' | 'bare_bears';
+type ThemeType = 'vscode' | 'boarding_pass' | 'squarepants' | 'barbie_land' | 'bare_bears';
 
 export default function Generator() {
   const [name, setName] = useState<string>('Alex Developer');
@@ -64,8 +64,8 @@ export default function Generator() {
       case 'boarding_pass':
         drawBoardingPassTheme(ctx, canvas.width, canvas.height);
         break;
-      case 'bikini_bottom':
-        drawBikiniBottomTheme(ctx, canvas.width, canvas.height);
+      case 'squarepants':
+        drawSquarePantsTheme(ctx, canvas.width, canvas.height);
         break;
       case 'barbie_land':
         drawBarbieLandTheme(ctx, canvas.width, canvas.height);
@@ -260,8 +260,8 @@ export default function Generator() {
     });
   };
 
-  // 3. BIKINI BOTTOM HACKER LICENSE THEME
-  const drawBikiniBottomTheme = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+  // 3. SQUAREPANTS HACKER LICENSE THEME
+  const drawSquarePantsTheme = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
     ctx.fillStyle = '#FFFDEB';
     ctx.fillRect(0, 0, width, height);
 
@@ -274,7 +274,7 @@ export default function Generator() {
 
     ctx.fillStyle = '#044D29';
     ctx.font = 'bold 36px "Bodoni Moda", serif';
-    ctx.fillText('BIKINI BOTTOM HACKER LICENSE', 40, 70);
+    ctx.fillText('SQUAREPANTS HACKER LICENSE', 40, 70);
 
     ctx.fillStyle = '#FF007A';
     ctx.font = 'bold 20px "VT323", monospace';
@@ -313,7 +313,7 @@ export default function Generator() {
     });
   };
 
-  // 4. BARBIE LAND / SABRINA THEME
+  // 4. BARBIE LAND THEME
   const drawBarbieLandTheme = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
     ctx.fillStyle = '#FFFDEB';
     ctx.fillRect(0, 0, width, height);
@@ -493,7 +493,7 @@ export default function Generator() {
           Hacker <span className="text-[#FF007A] font-sans italic">गोवा</span> House
         </h1>
         <p className="font-mono text-sm md:text-base text-emerald-200 tracking-wider">
-          GOA, INDIA &bull; 28 - 31 OCT 2026
+          GOA, INDIA &bull; PRESENTED BY TEAM GIT-COMMITTED
         </p>
       </header>
 
@@ -535,12 +535,12 @@ export default function Generator() {
 
               <button
                 type="button"
-                onClick={() => setTheme('bikini_bottom')}
+                onClick={() => setTheme('squarepants')}
                 className={`py-2 px-2 rounded-lg font-bold text-xs flex items-center justify-center gap-1 border-2 transition ${
-                  theme === 'bikini_bottom' ? 'bg-[#FFE600] text-[#044D29] border-[#044D29]' : 'bg-white text-[#044D29]'
+                  theme === 'squarepants' ? 'bg-[#FFE600] text-[#044D29] border-[#044D29]' : 'bg-white text-[#044D29]'
                 }`}
               >
-                <ShieldAlert className="w-3 h-3" /> SpongeBob
+                <ShieldAlert className="w-3 h-3" /> SquarePants
               </button>
 
               <button
@@ -608,7 +608,7 @@ export default function Generator() {
           </div>
 
           <div>
-            <label className="block text-xs font-bold font-mono uppercase mb-1 font-bold">tag / hashtag:</label>
+            <label className="block text-xs font-bold font-mono uppercase mb-1">tag / hashtag:</label>
             <input
               type="text"
               value={tag}
