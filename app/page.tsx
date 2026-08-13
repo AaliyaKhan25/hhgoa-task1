@@ -1,5 +1,6 @@
 // Remove the standard top-level import:
 // import Generator from '@/components/Generator';
+// Triggering Vercel deploy
 
 // Replace it with dynamic import:
 import dynamic from 'next/dynamic';
