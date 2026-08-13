@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Download, Share2, Sparkles, Plane, Code2, ShieldAlert, Heart, Compass } from 'lucide-react';
-import heic2any from 'heic2any';
 
 type ThemeType = 'vscode' | 'boarding_pass' | 'bikini_bottom' | 'barbie_land' | 'bare_bears';
 
@@ -30,6 +29,9 @@ export default function Generator() {
     try {
       let blob: Blob | File = file;
       if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
+        // Dynamically import heic2any inside the function so it only runs on the client
+        const heic2any = (await import('heic2any')).default;
+        
         const converted = await heic2any({ blob: file, toType: 'image/jpeg' });
         blob = Array.isArray(converted) ? converted[0] : converted;
       }
