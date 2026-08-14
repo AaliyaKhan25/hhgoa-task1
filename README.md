@@ -10,7 +10,7 @@ An interactive, canvas-based Builder Badge Generator for **Hacker House Goa 2026
 * 🎨 **5 Retro & Pop-Culture Themes:**
   * **VS Code:** Developer-first IDE code snippet aesthetic.
   * **Boarding Pass:** Flight pass ticket layout for Goa travelers.
-  * **Bikini Bottom:** S-Tier SpongeBob hacker license.
+  * **Squarepants:** S-Tier SpongeBob hacker license.
   * **Barbie Land:** Vibrant pink builder badge.
   * **We Bare Bears:** California bear license complete with a or iPhone native (`HEIC`) images.
 * ⚡ **Instant Client-Side Canvas Rendering:** High-resolution 1200x630 graphics generated entirely in browser.
