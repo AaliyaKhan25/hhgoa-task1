@@ -330,7 +330,7 @@ export default function Generator() {
 
     ctx.fillStyle = '#FFFDEB';
     ctx.font = '48px "Pacifico", cursive';
-    ctx.fillText('Barbie Land', 50, 85);
+    ctx.fillText('Barbie Pass', 50, 85);
 
     ctx.fillStyle = '#FFE600';
     ctx.font = 'bold 20px "JetBrains Mono", monospace';
@@ -379,7 +379,7 @@ export default function Generator() {
 
     ctx.fillStyle = '#044D29';
     ctx.font = '900 40px "Bodoni Moda", serif';
-    ctx.fillText('CALIFORNIA', 40, 70);
+    ctx.fillText('GOA ORIGINALA', 40, 70);
 
     ctx.fillStyle = '#FF007A';
     ctx.font = 'bold 24px "VT323", monospace';
